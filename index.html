@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cloud Notes App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Cloud Notes</h1>
+        <button id="toggleMode" onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+        
+
+        <input type="text" id="noteInput" placeholder="Write your note here...">
+        <button onclick="addNote()">Add Note</button>
+        <ul id="notesList"></ul>
+    </div>
+    
+    <div id="analytics" class="analytics-box">
+        <div>
+          <strong>Total Notes:</strong>
+          <span id="totalNotes">0</span>
+        </div>
+        <div>
+          <strong>Last Note Added:</strong>
+          <span id="lastNoteTime">N/A</span>
+        </div>
+      </div>
+      
+      
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="firebase-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
